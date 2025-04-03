@@ -8,29 +8,15 @@
   /* Estilos generales */
   .page {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(../ASSETS/justicia.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  
-    
   
   
   }
-  /**estilo del formulario realizado sobre poliderportivo**/
- /* .containerD {
-    padding: 20px;
-    margin: 0 auto;
-    width: 100vh;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-
-
-}*/
+ 
 
   /* Header y Footer */
   header, footer {
@@ -38,11 +24,30 @@
     background-image: radial-gradient(#838a8f,#2e65cc);
     color: white;
     text-align: center;
+    box-shadow: 5px 5px 5px black;
+  }
+  .cabecera{
+    color: white;
+    text-align: center;
+
   }
   
   /* Contenedor principal */
   .container {
-    background-color: white;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: flex-end;
+    max-width:1200px;
+    min-height: 100vh;
+  
+  }
+  .contenedor {
+    background-color: #f0f0f0;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
@@ -102,10 +107,18 @@
   .checkbox{
     padding: 0px;
     margin: 0px;
-    display: flex;
-    align-items: center;
+    width: auto;
     gap: 10px;
   
+  }
+  .consulta{
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 18px;
+    margin: 20px;
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 400px;
   }
   
   fieldset{
@@ -122,11 +135,11 @@
   }
   
   nav {
-    background-image: radial-gradient(#3498db,#2ecc71);
-    color: #2ecc71;
+    background-image:linear-gradient(#c5deee,#2e65cc);
+    color: #98b9e4;
     position: sticky;
     min-width: 20%;
-    height: 100%;
+    
   }
   
   main {
@@ -135,10 +148,19 @@
   }
   
   aside {
-    background-color: #e74c3c;
+    background-image:linear-gradient(#c5deee,#2e65cc);
     position: sticky; 
     min-width: 20%; 
     height: 100%;
+  }
+  h2{
+    color: darkblue;
+  }
+  a{
+    color: rgb(92, 7, 92);
+  }
+  ul{
+    color: silver;
   }
  
   
@@ -147,13 +169,16 @@
       flex-direction: column;
     
     }
+    .contenedor {
+      flex-direction: column;
+    }
     nav, aside {
       position: static;
       width: 100%;
       height: fit-content;
   
     }
-   main{
-    order: 1;
-   }
+    main{
+      order: 1;
+     }
   }
