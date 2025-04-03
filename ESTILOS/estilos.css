@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  .page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+    
+  
+  
+  }
+  /**estilo del formulario realizado sobre poliderportivo**/
+ /* .containerD {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+
+}*/
+
+  /* Header y Footer */
+  header, footer {
+    padding: 20px;
+    background-image: radial-gradient(#838a8f,#2e65cc);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: center;
+    max-width:1200px;
+    min-height: 100vh;
+  
+  }
+  form{
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  button{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #inicio{
+    background-color: #2e8dcc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #registro{
+    background-color: #2e8dcc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 14px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .checkbox{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+  }
+  
+  fieldset{
+    border: 1px solid #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navegación, contenido y barra lateral */
+  nav, main, aside {
+    padding: 20px;
+    border-radius: 18px;
+  }
+  
+  nav {
+    background-image: radial-gradient(#3498db,#2ecc71);
+    color: #2ecc71;
+    position: sticky;
+    min-width: 20%;
+    height: 100%;
+  }
+  
+  main {
+    background-color: #ecf0f1;
+    flex-grow: 1;
+  }
+  
+  aside {
+    background-color: #e74c3c;
+    position: sticky; 
+    min-width: 20%; 
+    height: 100%;
+  }
+ 
+  
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    
+    }
+    nav, aside {
+      position: static;
+      width: 100%;
+      height: fit-content;
+  
+    }
+   main{
+    order: 1;
+   }
+  }
